@@ -29,6 +29,7 @@ const CheckoutPage = () => {
         "products": final_list
       }
     });
+    alert("Purchase complete! Thank you for the puschase :)");
   };
 
   return (

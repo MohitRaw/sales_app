@@ -17,12 +17,6 @@ const CartContent = ({image, price, name ,count}) => {
           <h4>no. of items :{count}</h4>
         </div>
       </div>
-
-      {/* <div>
-          <h4>
-              total cost : {}
-          </h4>
-      </div> */}
     </div>
   );
 }; 

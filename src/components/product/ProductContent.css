@@ -1,0 +1,19 @@
+.productContent {
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    width: 100%;
+}
+
+.productContent_row{
+    display: flex;
+    flex-direction: row;
+    padding: 0 20px 20px 0px;
+}
+
+.prodImage{
+    display: block;
+    height: 150px;
+    width: 150px;
+    object-fit: contain;
+}

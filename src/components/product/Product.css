@@ -1,3 +1,24 @@
+.product{
+display: flex;
+flex-direction: column;
+}
+
+.product_header{
+    background-color: aqua;
+}
+.product_header_link{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: lawngreen;
+    padding: 30px ;
+}
+
+.product_header_link>h2{
+    width: 100%;
+}
+
 .product_body{
     display: flex;
     width: 100vw;
@@ -7,4 +28,7 @@
 .product_header_search {
     display: flex;
     width: 100%;
+}
+.product_header_search>input{
+    width: 500px;
 }

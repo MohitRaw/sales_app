@@ -28,7 +28,7 @@ const ProductContent = ({image, price, name ,id}) => {
         <div  className="productContent_details">
           <h3>name: {name}</h3>
           <h3>price: {price}</h3>
-          <button onClick={() => addToCartHandler(id)}>+add to cart</button>
+          <button className="addButton" onClick={() => addToCartHandler(id)}>+add to cart</button>
         </div>
       </div>
     </div>

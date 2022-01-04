@@ -10,15 +10,15 @@ const Product = () => {
       <div className="product_header">
         <h1>Products Application</h1>
         <div className="product_header_link">
+          <div className="product_header_search">
+            <p>search</p>
+            <input type="text" />
+          </div>
           <h2>
             <Link to="/checkoutPage" className="innerSidebar_bottom_tab">
-              <span>Shopping cart</span>
+              <span>Go to shopping cart</span>
             </Link>
           </h2>
-        </div>
-        <div className="product_header_search">
-          <p>search</p>
-          <input type="text" />
         </div>
       </div>
       <div className="product_body">

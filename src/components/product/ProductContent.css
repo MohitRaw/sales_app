@@ -17,3 +17,13 @@
     width: 150px;
     object-fit: contain;
 }
+
+.addButton{
+    background-color: lightcoral;
+    width: 100px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+
+}

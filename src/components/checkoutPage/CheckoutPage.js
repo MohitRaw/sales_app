@@ -12,12 +12,21 @@ const CheckoutPage = () => {
     totalPrice +=
       ProductList.arrayOfProducts[key]["price"] * cartData.prod[key];
   }
-  const submitCartHandler = totalPrice => {
+  let final_list = [];
+  for(let key in cartData.prod){
+    let obj = {}
+    obj["name"] = ProductList.arrayOfProducts[key]["name"]
+    obj["quantity"] = cartData.prod[key]
+    obj["price"] = cartData.prod[key]*ProductList.arrayOfProducts[key]["price"]
+    final_list.push(obj)
+  }
+  const submitCartHandler = (totalPrice) => {
     axios({
       method: "post",
-      url: "https://janam.free.beeceptor.com/",
+      url: "https://janam.free.beeceptor.com",
       data: {
-        price: { totalPrice }
+        "totalPrice": { totalPrice },
+        "products": final_list
       }
     });
   };

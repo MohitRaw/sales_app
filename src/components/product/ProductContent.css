@@ -2,7 +2,8 @@
     display: flex;
     padding: 40px;
     flex-direction: column;
-    width: 100%;
+    width: 500px;
+    height: 200px;
 }
 
 .productContent_row{
